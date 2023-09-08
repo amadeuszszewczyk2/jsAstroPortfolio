@@ -1,6 +1,5 @@
 ---
 import heroImage from '@assets/images/hero.png';
-import { Image } from '@astrojs/image/components';
 import Button from '@components/ui/Button.astro';
 ---
 
@@ -19,15 +18,5 @@ import Button from '@components/ui/Button.astro';
 			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
 		</div>
 	</div>
-	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
-		<Image
-			src={heroImage}
-			alt="Coding girl"
-			aspectRatio="4:4"
-			format="png"
-			width={600}
-			height={600}
-			loading="eager"
-		/>
-	</div>
+	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center"></div>
 </section>

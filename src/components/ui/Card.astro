@@ -1,6 +1,5 @@
 ---
 import projectImage from '@assets/images/project.png';
-import { Image } from '@astrojs/image/components';
 import Tags from '@components/ui/Tags.astro';
 interface Props {
 	url?: string;
@@ -19,17 +18,7 @@ const { url = '#', alt = 'Project image', title = 'Project title', tags = ['Tags
 		class="rounded-xl bg-white p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl"
 	>
 		<a href={url} aria-label="link to project">
-			<div class="relative flex items-end overflow-hidden rounded-xl">
-				<Image
-					src={projectImage}
-					alt={alt}
-					aspectRatio="4:4"
-					format="png"
-					width={400}
-					height={400}
-					loading="eager"
-				/>
-			</div>
+			<div class="relative flex items-end overflow-hidden rounded-xl"></div>
 			<div class="mt-1 p-2">
 				<h3 class="text-xl text-orange lg:text-2xl">{title}</h3>
 				<Tags tags={tags} />
