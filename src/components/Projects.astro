@@ -17,7 +17,10 @@ const projects = await getCollection('projects', ({ data }) => {
 	<div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
 		{
 			projects.map((project) => (
-				<Card url={project.data.link} title={project.data.title} tags={project.data.tags} />
+				<Card url={project.data.link} 
+				title={project.data.title} 
+				alt={project.data.img_alt}
+				tags={project.data.tags} />
 			))
 		}
 	</div>
@@ -28,7 +31,8 @@ const projects = await getCollection('projects', ({ data }) => {
 		class="flex flex-row text-black hover:text-orange dark:text-white dark:hover:text-orange"
 		aria-label="link to repository"
 	>
-		View full private projects archive
+		See more on Github
+
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
