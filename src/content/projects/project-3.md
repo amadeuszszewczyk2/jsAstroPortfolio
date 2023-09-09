@@ -1,7 +1,7 @@
 ---
 inProgress: false
-title: Project title
-img_alt: project image alt text
-link: https://github.com/veranikabarel?tab=repositories
-tags: ['React', 'CSS', 'Typescript']
+title: My website "Job offers"
+img_alt: My website Job offers
+link: https://amadeuszs.pomeranian-start-it.pl
+tags: ['Wordpress', 'Elementor']
 ---

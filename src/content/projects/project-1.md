@@ -1,7 +1,7 @@
 ---
 inProgress: false
-title: Pomeranian Start IT App | Portfolio
+title: Pomeranian Start IT App
 img_alt: Pomeranian Start IT App
-link: https://github.com/amadeuszszewczyk2/pomeranian-bolierplate-public
+link: https://pomeranianstartit.vercel.app/dashboard
 tags: ['Html', 'CSS', 'JS', 'React']
 ---

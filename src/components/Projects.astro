@@ -17,17 +17,12 @@ const projects = await getCollection('projects', ({ data }) => {
 	<div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
 		{
 			projects.map((project) => (
-				<Card
-					url={project.data.link}
-					title={project.data.title}
-					alt={project.data.img_alt}
-					tags={project.data.tags}
-				/>
+				<Card url={project.data.link} title={project.data.title} tags={project.data.tags} />
 			))
 		}
 	</div>
 	<a
-		href="https://github.com/"
+		href="https://github.com/amadeuszszewczyk2?tab=repositories"
 		target="_blank"
 		rel="noopener"
 		class="flex flex-row text-black hover:text-orange dark:text-white dark:hover:text-orange"
